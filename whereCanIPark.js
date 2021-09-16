@@ -8,7 +8,7 @@ const whereCanIPark = function (spots, vehicle) {
         }
       } else if (vehicle === "small") {
         if (spots[i][j] === "R" || spots[i][j] === "S") {
-          coordinates.push(j, i);
+          return [j, i];
         }
       } else if (vehicle === "motorcycle") {
         if (spots[i][j] === "R" || spots[i][j] === "S" || spots[i][j] === "M") {
